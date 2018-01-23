@@ -4,6 +4,13 @@ from tkinter import *
 from PIL import Image
 
 
+##############
+##          ##
+##          ##
+##          ##
+##############
+
+
 tema = "dimgray"
 
 okno = Tk()
