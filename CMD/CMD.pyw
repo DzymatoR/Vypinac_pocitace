@@ -111,15 +111,15 @@ horni = Frame (okno, width = 250, height = 200, bg = tema, padx = 40)
 horni.grid(row = 1, column = 0)
 
 
-hodinEnt = Spinbox (horni, from_=0, to = 99, width = 5, justify = RIGHT)
+hodinEnt = Spinbox (horni, from_=0, to = 99, width = 5, borderwidth = 0, justify = RIGHT)
 # hodinEnt.insert (0,"0")
 hodinEnt.grid(row = 0, column = 1)
 
-minutEnt = Spinbox (horni, from_=0, to = 59, width = 5, justify = RIGHT)
+minutEnt = Spinbox (horni, from_=0, to = 59, width = 5, borderwidth = 0, justify = RIGHT)
 # minutEnt.insert(0, "0")
 minutEnt.grid(row = 0, column = 2)
 
-sekundEnt = Spinbox (horni, from_=0, to = 59, width = 5, justify = RIGHT)
+sekundEnt = Spinbox (horni, from_=0, to = 59, width = 5, borderwidth = 0, justify = RIGHT)
 # sekundEnt.insert (0, "0")
 sekundEnt.grid(row = 0, column = 3)
 
@@ -135,10 +135,10 @@ sekundLab.grid(row = 1, column = 3)
 check = IntVar()
 check.set(1)
 
-radioButton01 = Radiobutton(horni, text = "Vypnout za: ", variable = check, value = 1, bg = tema, command = vynulujCitace)
+radioButton01 = Radiobutton(horni, text = "Vypnout za: ", variable = check, value = 1, bg = tema, borderwidth = 0, command = vynulujCitace)
 radioButton01.grid(row = 2, columnspan = 3, sticky = W)
 
-radioButton02 = Radiobutton(horni, text = "Vypnout v: ", variable = check, value = 2, bg = tema, command = casCitace)
+radioButton02 = Radiobutton(horni, text = "Vypnout v: ", variable = check, value = 2, bg = tema, borderwidth = 0, command = casCitace)
 radioButton02.grid(row = 3, columnspan = 3, sticky = W)
 
 
@@ -151,13 +151,13 @@ dolni.grid(row = 2, column = 0)
 mezera = Frame(dolni, height = 20, bg = tema)
 mezera.grid(row = 0)
 
-vypni = Button (dolni, text = "Vypni!", width = 10, bg = "green", fg = "white", command = vypniMe)
+vypni = Button (dolni, text = "Vypni!", width = 10, bg = "green", fg = "white", borderwidth = 0, command = vypniMe)
 vypni.grid(row = 1, sticky = W+E)
 
 mezera = Frame(dolni, height = 10, bg = tema)
 mezera.grid(row = 2)
 
-zrus = Button (dolni, text = "Zruš vypnutí!", width = 20, bg = "red", fg = "white", command = zrusVypnuti)
+zrus = Button (dolni, text = "Zruš vypnutí!", width = 20, bg = "red", fg = "white", borderwidth = 0, command = zrusVypnuti)
 zrus.grid(row = 3, sticky = W+E)
 
 mezera = Frame(dolni, height = 20, bg = tema)
