@@ -1,6 +1,7 @@
 import os
 import datetime
 from tkinter import *
+from tkinter import messagebox
 from PIL import Image
 
 
@@ -62,6 +63,8 @@ def vynulujCitace():
 
     sekundEnt.delete(0,4)
     sekundEnt.insert (0, "0")
+
+    messagebox.showinfo("Pozor", "hodnoty vynulovány")
 
 
 def casCitace():
