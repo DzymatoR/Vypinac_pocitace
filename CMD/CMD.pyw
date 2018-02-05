@@ -55,6 +55,8 @@ def zrusVypnuti():
     
 def vynulujCitace():
 
+    hodinEnt.configure (to = 99)
+
     hodinEnt.delete(0,4)
     hodinEnt.insert (0, "0")
 
@@ -64,13 +66,14 @@ def vynulujCitace():
     sekundEnt.delete(0,4)
     sekundEnt.insert (0, "0")
 
-    messagebox.showinfo("Pozor", "hodnoty vynulovány")
+   # messagebox.showinfo("Pozor", "hodnoty vynulovány")
 
 
 def casCitace():
 
     ted = datetime.datetime.now()
 
+    hodinEnt.configure (to = 23)
 
     hodinEnt.delete(0,4)
     hodinEnt.insert (0, ted.hour)
